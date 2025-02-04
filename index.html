@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Reuse Digital Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        body {
+            background-image: url('ABCD.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        @keyframes floatAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .float-icon {
+            animation: floatAnimation 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans relative">
+    <header class="bg-black bg-opacity-60 text-white py-12 shadow-2xl">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-6xl font-bold mb-8 float-icon text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.7)]">
+                SOFTWARE REUSE <br>DIGITAL ASSIGNMENT - 1
+            </h1>
+            <nav class="flex justify-center flex-wrap gap-6">
+                <a href="index.html" class="px-8 py-3 bg-white bg-opacity-20 text-white rounded-xl hover:bg-opacity-40 transition">
+                    Dashboard
+                </a>
+                <a href="sdg3.html" class="px-8 py-3 bg-white bg-opacity-20 text-white rounded-xl hover:bg-opacity-40 transition">
+                    Health Insights
+                </a>
+                <a href="niti-redirect.html" class="px-8 py-3 bg-white bg-opacity-20 text-white rounded-xl hover:bg-opacity-40 transition">
+                    NITI Aayog SDG Index →
+                </a>
+                <a href="profile.html" class="px-8 py-3 bg-white bg-opacity-20 text-white rounded-xl hover:bg-opacity-40 transition">
+                    DA - 1 Details
+                </a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <section class="grid md:grid-cols-2 gap-12">
+            <div class="bg-black bg-opacity-60 rounded-3xl shadow-2xl p-10 text-center transform transition hover:scale-105">
+                <div class="text-purple-300 text-6xl mb-6 float-icon">
+                    🌍
+                </div>
+                <h2 class="text-3xl font-bold mb-6 text-white drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)]">Global SDG Overview</h2>
+                <p class="mb-8 text-gray-200 text-lg">
+                    Explore the 17 United Nations Sustainable Development Goals that aim to transform our world by 2030.
+                </p>
+                <a href="Home.html" class="inline-block bg-purple-600 text-white px-10 py-4 rounded-xl hover:bg-purple-700 transition-all">
+                    View Global Goals
+                </a>
+            </div>
+
+            <div class="bg-black bg-opacity-60 rounded-3xl shadow-2xl p-10 text-center transform transition hover:scale-105">
+                <div class="text-blue-300 text-6xl mb-6 float-icon">
+                    📊
+                </div>
+                <h2 class="text-3xl font-bold mb-6 text-white drop-shadow-[0_3px_3px_rgba(0,0,0,0.5)]">Tamil Nadu Progress</h2>
+                <p class="mb-8 text-gray-200 text-lg">
+                    Dive into the state-level progress on key Sustainable Development Goals.
+                </p>
+                <a href="sdg.html" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-xl hover:bg-blue-700 transition-all">
+                    Explore State Dashboard
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 bg-opacity-80 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; Srikanth Reddy PVJ 21MIS1095</p>
+        </div>
+    </footer>
+</body>
+</html>
